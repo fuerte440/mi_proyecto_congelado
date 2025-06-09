@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "544816069740",
+    "project_id": "pokexcel-315bd",
+    "storage_bucket": "pokexcel-315bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544816069740:android:faf844406a59efb775ec49",
+        "android_client_info": {
+          "package_name": "com.example.pokexcell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544816069740-cs0bqoqifql21rdi4fb2tglvs1hpeat5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pokexcell",
+            "certificate_hash": "4c427ed0c35f5f8cb48bc42b95a3e294c059918e"
+          }
+        },
+        {
+          "client_id": "544816069740-7aqv0ebb3vmd6k8ulnnquo9n00itnm08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV1s2wXzVlzdJcqHsd0O9ImfJL7ZGW5zY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544816069740-7aqv0ebb3vmd6k8ulnnquo9n00itnm08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
