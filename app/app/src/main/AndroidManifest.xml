@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pokexcell">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icono"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pokexcell"
+        tools:targetApi="31">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Actividad de inicio de sesión (pantalla principal) -->
+        <activity
+            android:name=".ui.iniciosesion.ActividadInicioSesion"
+            android:exported="true"
+            android:theme="@style/Theme.Pokexcell">
+        </activity>
+
+        <!-- Registro -->
+        <activity
+            android:name=".ui.registro.ActividadRegistro"
+            android:exported="false"
+            android:label="Registro"
+            android:theme="@style/Theme.Pokexcell" />
+
+        <!-- MainActivity (puede usarse luego) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Pokexcell" />
+        <!-- Consultar Cartas dentro de colecciones -->
+        <activity android:name=".ui.consultar.ActividadConsultarCartasDeColeccion" />
+
+        <!-- Actividad del menú principal -->
+        <activity
+            android:name=".ui.menu.ActividadPrincipalMenu"
+            android:exported="true"
+            android:label="Menú Principal"
+            android:theme="@style/Theme.Pokexcell" />
+        <!-- Crear Colección -->
+        <activity
+            android:name=".ui.colecciones.CrearColeccionActivity"
+            android:exported="false"
+            android:label="Crear Colección"
+            android:theme="@style/Theme.Pokexcell" />
+        <activity
+            android:name=".ui.crearlista.ActividadCrearListaDentroDeColeccion"
+            android:exported="false"
+            android:label="Agregar cartas a lista"
+            android:theme="@style/Theme.Pokexcell" />
+        <activity
+            android:name=".ui.consultar.ActividadConsultarListas"
+            android:exported="false"
+            android:label="Consultar Colecciones"
+            android:theme="@style/Theme.Pokexcell" />
+        <activity
+            android:name=".ui.consultar.ActividadConsultarCartasEnListas"
+            android:exported="false"
+            android:label="Cartas en lista"
+            android:theme="@style/Theme.Pokexcell" />
+        <activity
+            android:name=".ui.cuenta.MiCuentaActivity"
+            android:exported="false"
+            android:label="Mi cuenta"
+            android:theme="@style/Theme.Pokexcell" />
+        <activity
+            android:name=".ui.animacion.AnimacionInicial"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

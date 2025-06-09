@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- FONDO CON TRANSPARENCIA -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pokeball"
+        android:alpha="0.05" />
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- BARRA SUPERIOR CON TEXTO CENTRADO -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#2488E9"
+                android:elevation="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pokeball"
+                    android:alpha="0.25" />
+
+                <ImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="76dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:contentDescription="App Icon"
+                    android:src="@mipmap/icono"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cinzel"
+                    android:text="POKEXCEL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- ESPACIADO -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_animacion_menu"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_fileName="pokeball.json"
+                app:lottie_speed="1.0" />
+
+
+            <!-- BOTONES -->
+
+
+            <Button
+                android:id="@+id/boton_mi_cuenta"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/boton_ovalado"
+                android:padding="25dp"
+                android:text="Mi cuenta"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/boton_consultar"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#64B5F6"
+                android:padding="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/boton_ovalado"
+                android:text="Consultar colecciones"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/boton_crear"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#64B5F6"
+                android:padding="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Crear una nueva colección"
+                android:background="@drawable/boton_ovalado"
+
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+            <Button
+                android:id="@+id/boton_consultar_cartas_coleccion"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="90dp"
+                android:backgroundTint="#64B5F6"
+                android:padding="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/boton_ovalado"
+                android:text="Consultar Cartas"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/boton_salir"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="32dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#9E9E9E"
+                android:padding="10dp"
+                android:text="CERRAR SESION"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

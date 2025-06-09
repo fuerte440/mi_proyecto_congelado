@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pokexcel</string>
+    <string name="pokexcel">POKEXCEL</string>
+    <string name="cantidad_carta">Cantidad: %1$d</string>
+    <string name="mensaje_bienvenida">¡Bienvenido a Pokexcel!</string>
+    <string name="id_lista_formato">ID: %1$d</string>
+    <string name="placeholder2">Imagen de la colección seleccionada</string>
+    <string name="default_web_client_id">544816069740-7aqv0ebb3vmd6k8ulnnquo9n00itnm08.apps.googleusercontent.com</string>
+
+</resources>
