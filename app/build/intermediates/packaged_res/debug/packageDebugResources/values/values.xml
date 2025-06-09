@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Pokexcel</string>
+    <string name="cantidad_carta">Cantidad: %1$d</string>
+    <string name="default_web_client_id" translatable="false">544816069740-7aqv0ebb3vmd6k8ulnnquo9n00itnm08.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">544816069740</string>
+    <string name="google_api_key" translatable="false">AIzaSyCV1s2wXzVlzdJcqHsd0O9ImfJL7ZGW5zY</string>
+    <string name="google_app_id" translatable="false">1:544816069740:android:faf844406a59efb775ec49</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCV1s2wXzVlzdJcqHsd0O9ImfJL7ZGW5zY</string>
+    <string name="google_storage_bucket" translatable="false">pokexcel-315bd.firebasestorage.app</string>
+    <string name="id_lista_formato">ID: %1$d</string>
+    <string name="mensaje_bienvenida">¡Bienvenido a Pokexcel!</string>
+    <string name="placeholder2">Imagen de la colección seleccionada</string>
+    <string name="pokexcel">POKEXCEL</string>
+    <string name="project_id" translatable="false">pokexcel-315bd</string>
+    <style name="Theme.Pokexcell" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+</resources>

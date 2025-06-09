@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_tu_avatar.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/tu_avatar.png"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_login.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_login.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_mi_cuenta.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_mi_cuenta.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_pokeball.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/pokeball.png"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_icono_login.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/icono_login.png"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_consultar_listas.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_consultar_listas.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/font_cinzelregular.ttf.flat",
+        "source": "com.example.pokexcell.app-main-77:/font/cinzelregular.ttf"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/font_cinzelbold.ttf.flat",
+        "source": "com.example.pokexcell.app-main-77:/font/cinzelbold.ttf"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/font_cinzel.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/font/cinzel.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/xml_backup_rules.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_item_lista.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/item_lista.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_google.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/google.png"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/font_cinzelsemibold.ttf.flat",
+        "source": "com.example.pokexcell.app-main-77:/font/cinzelsemibold.ttf"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_button_gradient.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/button_gradient.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_item_carta.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/item_carta.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_registro.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_registro.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_principal_menu.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_principal_menu.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_escanear_carta.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_escanear_carta.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_crear_coleccion.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_crear_coleccion.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_item_animacion.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/item_animacion.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_crear_lista_dentro_de_coleccion.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_crear_lista_dentro_de_coleccion.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/drawable_placeholder2.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/drawable/placeholder2.png"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/layout_actividad_consultar_cartas_en_lista.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/layout/actividad_consultar_cartas_en_lista.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.pokexcell.app-main-77:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokexcell.app-release-76:/mipmap-hdpi_icono.png.flat",
+        "source": "com.example.pokexcell.app-main-77:/mipmap-hdpi/icono.png"
+    }
+]
