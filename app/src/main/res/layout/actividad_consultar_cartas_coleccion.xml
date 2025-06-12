@@ -43,14 +43,27 @@
 
     <Spinner
         android:id="@+id/spinner_colecciones"
-        android:layout_width="0dp"
+        android:layout_width="203dp"
         android:layout_height="48dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#2488E9"
         android:popupBackground="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_listas"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#2488E9"
+        android:popupBackground="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

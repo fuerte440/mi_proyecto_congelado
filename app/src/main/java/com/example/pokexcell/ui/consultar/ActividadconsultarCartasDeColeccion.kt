@@ -1,7 +1,6 @@
 package com.example.pokexcell.ui.consultar
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -24,12 +23,18 @@ class ActividadConsultarCartasDeColeccion : AppCompatActivity() {
     private var idColeccion: Int = -1
     private var idUsuario: Int = -1
     private lateinit var spinner: Spinner
+    private lateinit var spinnerLista: Spinner
+
+    // 👇 Variables auxiliares para controlar selección actual
+    private var idColeccionSeleccionada = -1
+    private var nombreListaSeleccionada = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actividad_consultar_cartas_coleccion)
 
         spinner = findViewById(R.id.spinner_colecciones)
+        spinnerLista = findViewById(R.id.spinner_listas)
         recyclerView = findViewById(R.id.recycler_cartas_coleccion)
         recyclerView.layoutManager = GridLayoutManager(this, 3)
 
@@ -39,12 +44,14 @@ class ActividadConsultarCartasDeColeccion : AppCompatActivity() {
         cartaDAO = CartaDAO(this)
         cartaListaDAO = CartaListaDAO(this)
 
+        // 👉 Adaptador y RecyclerView inicial (sin filtro por lista aún)
         val todasLasCartas = cartaListaDAO.obtenerCartasPorColeccion(idColeccion)
         val idsCartasUsuario = cartaListaDAO.obtenerIdsCartasDeUsuarioPorColeccion(idUsuario, idColeccion)
 
         adapter = CartaColeccionAdapter(todasLasCartas, idsCartasUsuario)
         recyclerView.adapter = adapter
 
+        // 👉 Spinner de colecciones
         val opciones = arrayOf(
             "Pokémon Card 151 2023" to 1,
             "Pokémon VStar Universe 2023" to 2
@@ -53,15 +60,33 @@ class ActividadConsultarCartasDeColeccion : AppCompatActivity() {
         val adapterSpinner = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, nombres)
         spinner.adapter = adapterSpinner
 
+        idColeccionSeleccionada = opciones[0].second // valor inicial
+
+        // 👉 Spinner de listas del usuario
+        val listasUsuario = cartaListaDAO.obtenerListasDeUsuario(idUsuario)
+        val nombresListas = listasUsuario.map { it.nombre_lista }
+        val adapterListas = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, nombresListas)
+        spinnerLista.adapter = adapterListas
+
+        if (nombresListas.isNotEmpty()) {
+            nombreListaSeleccionada = nombresListas[0]
+        }
+
+        // 👉 Evento cuando se selecciona colección
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                val idSeleccionado = opciones[position].second
+                idColeccionSeleccionada = opciones[position].second
+                filtrarCartas()
+            }
 
-                val cartasActualizadas = cartaListaDAO.obtenerCartasPorColeccion(idSeleccionado)
-                val idsActualizados = cartaListaDAO.obtenerIdsCartasDeUsuarioPorColeccion(idUsuario, idSeleccionado)
+            override fun onNothingSelected(parent: AdapterView<*>) {}
+        }
 
-                adapter = CartaColeccionAdapter(cartasActualizadas, idsActualizados)
-                recyclerView.adapter = adapter
+        // 👉 Evento cuando se selecciona lista
+        spinnerLista.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                nombreListaSeleccionada = nombresListas[position]
+                filtrarCartas()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {}
@@ -69,8 +94,17 @@ class ActividadConsultarCartasDeColeccion : AppCompatActivity() {
 
         val botonVolver = findViewById<Button>(R.id.btn_volver_menu)
         botonVolver.setOnClickListener {
-            finish() // Termina la actividad y vuelve al menú principal
+            finish()
         }
     }
 
+    // ✅ Esta función filtra las cartas por colección y lista seleccionadas
+    private fun filtrarCartas() {
+        val lista = cartaListaDAO.obtenerListaPorNombreYUsuario(nombreListaSeleccionada, idUsuario) ?: return
+        val idsCartasDeLista = cartaListaDAO.obtenerIdsCartasPorLista(lista.id_lista)
+
+        val cartas = cartaListaDAO.obtenerCartasPorColeccion(idColeccionSeleccionada)
+        adapter = CartaColeccionAdapter(cartas, idsCartasDeLista)
+        recyclerView.adapter = adapter
+    }
 }
